@@ -49,6 +49,9 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 import newBlockImage from './newblocks/newblocks.png';
 import newBlockButtonImage from './newblocks/newblocks-small.png';
 
+import dobotLiteImage from './dobotlite/dobotlite.png';
+import dobotLiteButtonImage from './dobotlite/dobotlite-small.png';
+
 export default [
     {
         name: (
@@ -333,6 +336,26 @@ export default [
                 defaultMessage="New blocks."
                 description="my block"
                 id="gui.extension.newblocks.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired:false,
+        bluetoothRequired:false,
+        helpLink:'https://scratch.mit.edu/wedo'
+    }
+,
+    {
+        name: 'DobotLite',
+        extensionId: 'dobotlite',
+        collaborator: 'Grips',
+        iconURL: dobotLiteImage,
+        insetIconURL: dobotLiteButtonImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Dobot Lite."
+                description="new block"
+                id="gui.extension.dobotlite.description"
             />
         ),
         featured: true,
